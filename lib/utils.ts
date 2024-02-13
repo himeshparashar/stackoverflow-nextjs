@@ -46,7 +46,7 @@ export const formatBigNumber = (inputNumber: number): string => {
     formattedNumber = (inputNumber / 1000).toFixed(2);
     divisor = 1000;
   } else {
-    formattedNumber = inputNumber.toFixed(2);
+    formattedNumber = Number(inputNumber).toFixed(2);
     divisor = 1;
   }
 
